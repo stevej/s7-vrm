@@ -140,7 +140,7 @@ should work, but the sweet point is at around 3.3µH. The inductor can be self
 made by using a T50 ferrite toroid. For example T50-26 with permeability 75µ
 wrapped in 10 loops of 1.3 mm coper.
 
-## Tested mainboards
+## Supported mainboards
 
 This module should run with all mainboards, which provide the VRM module header
 as specified in Intel Pentium Mainboard Design Guidelines. Most of such boards
@@ -156,9 +156,7 @@ also pin BF0 was not pulled up internally anymore as it has been done on
 single-voltage CPUs before. This ended up in wrong multiplier detection on newer
 CPUs like Pentium MMX 200, which would be suddenly detected as 166MHz one. This
 can be fixed by adding a 10k pull-up resistor to the CPU between pin BF0 I/O
-VCC. In the following table of tested mainboards you can find a column R+BF0
-which tells if such a pull-up resistor had to be added to properly support the
-multiplier settings.
+VCC. 
 
 Faster Super Socket 7 CPUs, like AMD K6-2 and newer added another multiplier
 selection pin BF2, which is not supported on those old mainboards at all. It
@@ -167,15 +165,9 @@ multiplier is set to 2x, those newer CPUs would interpret it as 6x and for
 66MHz FSB go directly to 400MHz. However to be able to detect the CPU properly
 you would need to mod the BIOS. This is however optional, the system should
 work also with outdated BIOS. In such a case the CPU just would not be reported
-properly. 
+properly.
 
-With that in mind this VRM was tested using various CPUs and voltages on
-following mainboards:
-
-Manufacturer | Model           | Chipset | R+BF0 | BIOS Mod | VRM Compatible
--------------|-----------------|---------|-------|----------|-------------------
-Asus         | P/I-P55TP4XE(G) | i430FX  | Yes   | Yes      | Yes
-Gigabyte     | GA-586-ATE/P    | i430FX  | Yes   | Yes      | Yes
+For the list of tests mainboards see: https://github.com/necroware/s7-vrm/wiki
 
 ## License
 
