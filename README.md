@@ -111,29 +111,29 @@ R1 have to be adapted accordingly.
 
 ## Bill of materials
 
-Part        | Count | LCSC#    | Comment
-------------|-------|----------|--------------------------------------------
-C1, C15     | 2     | C13585   | 10u capacitor SMD 1206              
-C2, C14     | 2     | C51205   | 4.7u capacitor SMD 1206              
-C3, C6, C13 | 3     | C696845  | 0.1u capacitor SMD 1206
-C4, C5      | 2     | C407963  | 2200u capacitor TH Radial D10.0mm, P5.00mm
-C7          | 1     | C107186  | 242n capacitor SMD 1206
-C8          | 1     | C577176  | 39p capacitor SMD 1206
-C9-C12      | 4     | C407858  | 1000u capacitor TH Radial D8.0mm, P3.5mm
-D1          | 1     | C109000  | Switching diode
-J1          | 1     | C2897435 | Connector angled 02x15 pins 2.54mm 
-J2          | 1     | N/A      | 2x2 jumper
-L1          | 1     | N/A      | 3.3µH inductor
-Q1          | 1     | C13871   | NPN-BEC biased transistor 
-Q2, Q3      | 2     | C496603  | N-MOSFET GDS at least 15A
-Q4          | 1     | C454937  | PNP-BEC biased transistor 
-R1, R2, R6  | 3     | C136874  | 15K resistor SMD 1206
-R3, R8, R9  | 3     | C706412  | 3,75K resistor SMD 1206
-R4          | 1     | C870818  | 5K resistor SMD 1206
-R5          | 1     | C137314  | 30K resistor SMD 1206
-R7          | 1     | C137115  | 7,5K resistor SMD 1206
-SW1         | 1     | C5299506 | DIP-10 Switch THT 5 buttons 2.54mm
-U1          | 1     | C382017  | ISL6545 DC-DC Controller
+Part        | Count | LCSC#    | Digikey# | Comment
+------------|-------|----------|----------|----------------------------------
+C1, C15     | 2     | C13585   | 1276-2876-1-ND |10u capacitor SMD 1206              
+C2, C14     | 2     | C51205   | 1276-2789-1-ND |4.7u capacitor SMD 1206              
+C3, C6, C13 | 3     | C696845  | 1763-1206B104J101N-ND |0.1u capacitor SMD 1206
+C4, C5      | 2     | C407963  | P122287TB-ND |2200u capacitor TH Radial D10.0mm, P5.00mm
+C7          | 1     | C107186  | 311-1434-2-ND |242n capacitor SMD 1206
+C8          | 1     | C577176  | 13-CC1206JRNPOABN390CT-ND  |39p capacitor SMD 1206
+C9-C12      | 4     | C407858  | P124215-ND |1000u capacitor TH Radial D8.0mm, P3.5mm
+D1          | 1     | C109000  | 478-7807-1-ND |Switching diode
+J1          | 1     | C2897435 | S5568-ND | Connector angled 02x15 pins 2.54mm 
+J2          | 1     | N/A      | |2x2 jumper
+L1          | 1     | N/A      | |3.3µH inductor
+Q1          | 1     | C13871   | 5399-DTC143ECACT-ND |NPN-BEC biased transistor 
+Q2, Q3      | 2     | C496603  | |N-MOSFET GDS at least 15A
+Q4          | 1     | C454937  | |PNP-BEC biased transistor 
+R1, R2, R6  | 3     | C136874  | |15K resistor SMD 1206
+R3, R8, R9  | 3     | C706412  | |3,75K resistor SMD 1206
+R4          | 1     | C870818  | |5K resistor SMD 1206
+R5          | 1     | C137314  | |30K resistor SMD 1206
+R7          | 1     | C137115  | |7,5K resistor SMD 1206
+SW1         | 1     | C5299506 | |DIP-10 Switch THT 5 buttons 2.54mm
+U1          | 1     | C382017  | |ISL6545 DC-DC Controller
 
 The inductor doesn't need to be very exact, anything between 2.5µH and 4.7µH
 should work, but the sweet point is at around 3.3µH. The inductor can be self
