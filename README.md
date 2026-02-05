@@ -125,15 +125,15 @@ J1          | 1     | C2897435 | S5568-ND | Connector angled 02x15 pins 2.54mm
 J2          | 1     | N/A      | |2x2 jumper
 L1          | 1     | N/A      | |3.3µH inductor
 Q1          | 1     | C13871   | 5399-DTC143ECACT-ND |NPN-BEC biased transistor 
-Q2, Q3      | 2     | C496603  | |N-MOSFET GDS at least 15A
-Q4          | 1     | C454937  | |PNP-BEC biased transistor 
-R1, R2, R6  | 3     | C136874  | |15K resistor SMD 1206
-R3, R8, R9  | 3     | C706412  | |3,75K resistor SMD 1206
-R4          | 1     | C870818  | |5K resistor SMD 1206
-R5          | 1     | C137314  | |30K resistor SMD 1206
-R7          | 1     | C137115  | |7,5K resistor SMD 1206
-SW1         | 1     | C5299506 | |DIP-10 Switch THT 5 buttons 2.54mm
-U1          | 1     | C382017  | |ISL6545 DC-DC Controller
+Q2, Q3      | 2     | C496603  | 785-AOD66406CT-ND |N-MOSFET GDS at least 15A
+Q4          | 1     | C454937  | 1727-1979-1-ND |PNP-BEC biased transistor 
+R1, R2, R6  | 3     | C136874  | YAG5034CT-ND |15K resistor SMD 1206
+R3, R8, R9  | 3     | C706412  | P3.74KBCCT-ND |3,75K resistor SMD 1206
+R4          | 1     | C870818  | YAG5090CT-ND |5K resistor SMD 1206
+R5          | 1     | C137314??  | 13-AC1206FR-0730KLCT-ND  |30K resistor SMD 1206
+R7          | 1     | C137115  | 311-7.5KERCT-ND  |7,5K resistor SMD 1206
+SW1         | 1     | C5299506 | CKN3004-ND |DIP-10 Switch THT 5 buttons 2.54mm
+U1          | 1     | C382017  | 497-14008-1-ND |ISL6545 DC-DC Controller
 
 The inductor doesn't need to be very exact, anything between 2.5µH and 4.7µH
 should work, but the sweet point is at around 3.3µH. The inductor can be self
